@@ -6,57 +6,57 @@ function calculateOnePlusOne() {
 function calculateItemDungeon() {
 	var text = "ItemDugeon";
 	var probabilityobject = new Probability({
-		p: 0.1,
+		p: '10%',
 		f: function() {
 			setText(text, "Weapon");
 		}
 	}, {
-		p: 0.1,
+		p: '10%',
 		f: function() {
 			setText(text, "Armor");
 		}
 	}, {
-		p: 0.2,
+		p: '20%',
 		f: function() {
 			setText(text, "Comestible");
 		}
 	}, {
-		p: 0.08,
+		p: '8%',
 		f: function() {
 			setText(text, "Tool");
 		}
 	}, {
-		p: 0.16,
+		p: '16%',
 		f: function() {
 			setText(text, "Potion");
 		}
 	}, {
-		p: 0.16,
+		p: '16%',
 		f: function() {
 			setText(text, "Scroll");
 		}
 	}, {
-		p: 0.04,
+		p: '4%',
 		f: function() {
 			setText(text, "Spellbook");
 		}
 	}, {
-		p: 0.04,
+		p: '4%',
 		f: function() {
 			setText(text, "Wand");
 		}
 	}, {
-		p: 0.03,
+		p: '3%',
 		f: function() {
 			setText(text, "Ring");
 		}
 	}, {
-		p: 0.01,
+		p: '1%',
 		f: function() {
 			setText(text, "Amulet");
 		}
 	}, {
-		p: 0.08,
+		p: '8%',
 		f: function() {
 			setText(text, "Gem");
 		}
