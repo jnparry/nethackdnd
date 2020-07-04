@@ -1,62 +1,57 @@
-function calculateOnePlusOne() {
-	var calculatedValue = document.getElementById("result");
-	calculatedValue.innerHTML = "yo";
-}
-
 function calculateItemDungeon() {
 	var text = "ItemDugeon";
 	var probabilityobject = new Probability({
-		p: '10%',
+		p: 0.1,
 		f: function() {
 			setText(text, "Weapon");
 		}
 	}, {
-		p: '10%',
+		p: 0.1,
 		f: function() {
 			setText(text, "Armor");
 		}
 	}, {
-		p: '20%',
+		p: 0.2,
 		f: function() {
 			setText(text, "Comestible");
 		}
 	}, {
-		p: '8%',
+		p: 0.08,
 		f: function() {
 			setText(text, "Tool");
 		}
 	}, {
-		p: '16%',
+		p: 0.16,
 		f: function() {
 			setText(text, "Potion");
 		}
 	}, {
-		p: '16%',
+		p: 0.16,
 		f: function() {
 			setText(text, "Scroll");
 		}
 	}, {
-		p: '4%',
+		p: 0.04,
 		f: function() {
 			setText(text, "Spellbook");
 		}
 	}, {
-		p: '4%',
+		p: 0.04,
 		f: function() {
 			setText(text, "Wand");
 		}
 	}, {
-		p: '3%',
+		p: 0.03,
 		f: function() {
 			setText(text, "Ring");
 		}
 	}, {
-		p: '1%',
+		p: 0.01,
 		f: function() {
 			setText(text, "Amulet");
 		}
 	}, {
-		p: '8%',
+		p: 0.08,
 		f: function() {
 			setText(text, "Gem");
 		}
