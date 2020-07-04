@@ -3,17 +3,29 @@
     <head>
         <meta charset="utf-8">
         <title>My Title Page</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
     </head>
     
     <body>
-        <h1>Title</h1>
-        <h2>Title</h2>
-        <h3>Title</h3>
-        <h4>Title</h4>
-        <p>Hello</p>
+        <h1>Nethack Probability Calculator</h1>
         <button onclick="calculateOnePlusOne()">Click here</button>
-        <div id="result"></div>
+        <p id="result"></p>
+
+        <div class="row">
+            <h3>Item</h3>
+            <div class="column" style="background-color:#aaa;">
+                <h4>Dungeon</h4>
+                <textarea readonly placeholder="Item Class"></textarea>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h4>Containers</h4>
+                <textarea readonly placeholder="Item Class"></textarea>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h4>Gehennom</h4>
+                <textarea readonly placeholder="Item Class"></textarea>
+            </div>
+        </div>
     </body>
 </html>
