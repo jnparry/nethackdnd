@@ -7,11 +7,15 @@ function calculateItemDungeon() {
 	var text = "ItemDugeon";
 	var probabilityobject = new Probability({
 		p: 0.5,
-		f: setText(text, "Weapon")
+		f: function() {
+			setText(text, "Weapon");
+		}
 	}, {
 		p: 0.5,
-		f: setText(text, "Armor")
-	})
+		f: function() {
+			setText(text, "Armor");
+		}
+	});
 
 	probabilitilized();
 }
