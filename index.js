@@ -17,7 +17,7 @@ function calculateItemDungeon() {
 		}
 	});
 
-	probabilitilized();
+	probabilityobject();
 }
 
 function calculateItemContainer() {
