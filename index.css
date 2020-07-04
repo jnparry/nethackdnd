@@ -7,7 +7,7 @@
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 120px; /* Should be removed. Only for demonstration */
+  height: auto; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -23,4 +23,6 @@ h1,h2,h3,h4 {
 
 label {
   display: block;
+  padding-top: 7px;
+  padding-bottom: 3px;
 }
