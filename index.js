@@ -193,7 +193,7 @@ function setText(elementId, textValue) {
             l = 0,
             probas = [],
             functions = [],
-            sum = 0,
+            sum = parseFloat(0),
             args = toString.call(arguments[0]) === '[object Array]' ? arguments[0] : slice.call(arguments);
 
         args.push({
@@ -213,8 +213,7 @@ function setText(elementId, textValue) {
                 p = p / 100.0;
             }
 
-            sum += p;
-            sum = parseFloat(sum).toFixed(2);
+            sum = parseFloat(parseFloat(sum) + parseFloat(p)).toFixed(2);
 
             if (sum > 1.0) {
                 throw new TypeError('Probability.js: Probability exceeds "1.0" (=100%) in argument ' + i + ': p="' + p + '" (=' +  p * 100 + '%), sum="' + sum + '" (=' +  sum * 100 + '%).');
