@@ -214,7 +214,7 @@ function setText(elementId, textValue) {
             }
 
             sum += p;
-            sum = sum.toFixed(2);
+            sum = parseFloat(sum).toFixed(2);
 
             if (sum > 1.0) {
                 throw new TypeError('Probability.js: Probability exceeds "1.0" (=100%) in argument ' + i + ': p="' + p + '" (=' +  p * 100 + '%), sum="' + sum + '" (=' +  sum * 100 + '%).');
