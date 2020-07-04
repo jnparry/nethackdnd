@@ -796,6 +796,311 @@ function calculateArmor() {
 	probabilityobject();
 }
 
+function CalculateTool() {
+	var text = "toolInput";
+	var B = 0;
+	var U = 1;
+	var C = 0;
+	var probabilityobject = new Probability({
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Blindfold");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Lenses");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Towel");
+		}
+	}, {
+		p: 0.065,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Leash");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Saddle");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bag of Holding");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Chest");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ice Box");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Oilskin Sack");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Large Box");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Sack");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bugle");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Fire Horn");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Frost Horn");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Magic Flute");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Magic Harp");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Tooled Horn");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wooden Flute");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wooden Harp");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bell");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Drum of Earthquake");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Leather Drum");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Magic Whistle");
+		}
+	}, {
+		p: 0.1,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Tin Whistle");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Brass Lantern");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Magic Lamp");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Oil Lamp");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Tallow Candle");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wax Candle");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Credit Card");
+		}
+	}, {
+		p: 0.06,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Lock Pick");
+		}
+	}, {
+		p: 0.08,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Skeleton Key");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Grappling hook");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Pick-Axe");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bag of Tricks");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Can of Grease");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Crystle Ball");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Expensive Camera");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Figurine");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Horn of Plenty");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Magic Marker");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Mirror");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.007,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.015, 
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	}, {
+		p: 0.007,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Gems");
+		}
+	});
+
+	probabilityobject();
+}
+
 function setBUCAndItem(B, U, C, text, item) {
 	if (item === "Helm of Opposite Alignment" || 
 		item === "Gauntlets of Fumbling" || 
