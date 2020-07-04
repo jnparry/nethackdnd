@@ -174,7 +174,7 @@ function calculateWeapon() {
 }
 
 function calculateArmor() {
-	var text = "armorInput"
+	var text = "armorInput";
 	var probabilityobject = new Probability({
 		p: 0.008,
 		f: function() {
@@ -491,7 +491,7 @@ function setBUCAndItem(B, U, C, item, text) {
 		f: function() {
 			setText(text, "Cursed ".concat(item));
 		}
-	}
+	});
 }
 
 function setText(elementId, textValue) {
