@@ -169,10 +169,345 @@ function calculateItemGehennom() {
 	probabilityobject();
 }
 
+function calculateWeapon() {
+
+}
+
+function calculateArmor() {
+	var text = "armorInput"
+	var probabilityobject = new Probability({
+		p: 0.008,
+		f: function() {
+			setText(text, "Hawaiian Shirt");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "T-shirt");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Leather Jacket");
+		}
+	}, {
+		p: 0.082,
+		f: function() {
+			setText(text, "Leather Armor");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setText(text, "Orcish Ring Mail");
+		}
+	}, {
+		p: 0.072,
+		f: function() {
+			setText(text, "Studded Leather Armor");
+		}
+	}, {
+		p: 0.072,
+		f: function() {
+			setText(text, "Ring Mail");
+		}
+	}, {
+		p: 0.072,
+		f: function() {
+			setText(text, "Scale Mail");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setText(text, "Orcish Chain Mail");
+		}
+	}, {
+		p: 0.072,
+		f: function() {
+			setText(text, "Chain Mail");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setText(text, "Elven Mithril-Coat");
+		}
+	}, {
+		p: 0.062,
+		f: function() {
+			setText(text, "Splint Mail");
+		}
+	}, {
+		p: 0.072,
+		f: function() {
+			setText(text, "Banded Mail");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Dwarvish Mithril-Coat");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setText(text, "Bronze Plate Mail");
+		}
+	}, {
+		p: 0.044,
+		f: function() {
+			setText(text, "Plate Mail");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Crystal Plate Mail");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Orcish Cloak");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Dwarvish Cloak");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Leather Cloak");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Cloak of Displacement");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Oilskin Cloak");
+		}
+	}, {
+		p: 0.009,
+		f: function() {
+			setText(text, "Alchemy Smock");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Cloak of Invisability");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "Cloak of Magic Resistance");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Elven Cloak");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setText(text, "Robe");
+		}
+	}, {
+		p: 0.009,
+		f: function() {
+			setText(text, "Cloak of Protection");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setText(text, "Dunce Cap");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setText(text, "Cornuthaun");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "Dented Pot");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setText(text, "Elven Leather Helm");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Helmet");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setText(text, "Orcish Helm");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setText(text, "Helm of Brilliance");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setText(text, "Helm of Opposite Alignment");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "Helm of Telepathy");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setText(text, "Dwarvish Iron Helm");
+		}
+	}, {
+		p: 0.016,
+		f: function() {
+			setText(text, "Leather Gloves");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Gauntlets of Dexterity");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Gauntlets of Fumbling");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setText(text, "Gauntlets of Power");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setText(text, "Small Shield");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "Orcish Shield");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "Uruk-hai Shield");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setText(text, "Elven Shield");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setText(text, "Dwarvish Round Shield");
+		}
+	}, {
+		p: 0.007,
+		f: function() {
+			setText(text, "Large Shield");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setText(text, "Shield of Reflection");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setText(text, "Low Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Elven Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Kicking Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Fumble Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Levetation Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Jumping Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Speed Boots");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setText(text, "Water Walking Boots");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setText(text, "High Boots");
+		}
+	}, {
+		p: 0.007,
+		f: function() {
+			setText(text, "Iron Shoes");
+		}
+	});
+
+	probabilityobject();
+}
+
+function setBUCAndItem(B, U, C, item, text) {
+	var probabilityobject = new Probability({
+		p: B,
+		f: function() {
+			setText(text, "Blessed ".concat(item));
+		}
+	}, {
+		p: U,
+		f: function() {
+			setText(text, "Uncursed ".concat(item));
+		}
+	}, {
+		p: C,
+		f: function() {
+			setText(text, "Cursed ".concat(item));
+		}
+	}
+}
+
 function setText(elementId, textValue) {
 	document.getElementById(elementId).value = textValue;
 }
 
+/*
+ * Probability.js: Call JavaScript functions by probability.
+ *
+ * Copyright (c) 2012 Florian Schäfer (florian.schaefer@gmail.com)
+ * Released under MIT license.
+ *
+ * Version: 0.0.1
+ *
+ * https://github.com/fschaefer/Probability.js/blob/master/Probability.js 
+ */
 
 (function (root, factory) {
     if (typeof exports === 'object') {
