@@ -4,3 +4,9 @@ function calculateOnePlusOne() {
 	var calculatedValue = document.getElementById("result");
 	calculatedValue.innerHTML = "yo";
 }
+
+function calculateItemDungeon() {
+	var text = document.getElementById("ItemDugeon");
+	text.value = "hello";
+}
+
