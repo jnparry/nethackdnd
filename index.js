@@ -6,10 +6,10 @@ function calculateOnePlusOne() {
 function calculateItemDungeon() {
 	var text = "ItemDugeon";
 	var probabilityobject = new Probability({
-		p: '50%',
+		p: 0.5,
 		f: setText(text, "Weapon")
 	}, {
-		p: '50%',
+		p: 0.5,
 		f: setText(text, "Armor")
 	})
 }
