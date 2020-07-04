@@ -1,6 +1,4 @@
 function calculateOnePlusOne() {
-	var param1 = 1;
-	var param2 = 1;
 	var calculatedValue = document.getElementById("result");
 	calculatedValue.innerHTML = "yo";
 }
@@ -10,3 +8,12 @@ function calculateItemDungeon() {
 	text.value = "hello";
 }
 
+function calculateItemContainer() {
+	var text = document.getElementById("ItemContainer");
+	text.value = "hello";
+}
+
+function calculateItemGehennom() {
+	var text = document.getElementById("ItemGehennom");
+	text.value = "hello";
+}
