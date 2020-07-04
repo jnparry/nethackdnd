@@ -175,307 +175,320 @@ function calculateWeapon() {
 
 function calculateArmor() {
 	var text = "armorInput";
+	var B = .09;
+	var U = .79;
+	var C = .12;
+
 	var probabilityobject = new Probability({
 		p: 0.008,
 		f: function() {
-			setText(text, "Hawaiian Shirt");
+			setBUCAndItem(B, U, C, text, "Hawaiian Shirt");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "T-shirt");
+			setBUCAndItem(B, U, C, text, "T-shirt");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Leather Jacket");
+			setBUCAndItem(B, U, C, text, "Leather Jacket");
 		}
 	}, {
 		p: 0.082,
 		f: function() {
-			setText(text, "Leather Armor");
+			setBUCAndItem(B, U, C, text, "Leather Armor");
 		}
 	}, {
 		p: 0.02,
 		f: function() {
-			setText(text, "Orcish Ring Mail");
+			setBUCAndItem(B, U, C, text, "Orcish Ring Mail");
 		}
 	}, {
 		p: 0.072,
 		f: function() {
-			setText(text, "Studded Leather Armor");
+			setBUCAndItem(B, U, C, text, "Studded Leather Armor");
 		}
 	}, {
 		p: 0.072,
 		f: function() {
-			setText(text, "Ring Mail");
+			setBUCAndItem(B, U, C, text, "Ring Mail");
 		}
 	}, {
 		p: 0.072,
 		f: function() {
-			setText(text, "Scale Mail");
+			setBUCAndItem(B, U, C, text, "Scale Mail");
 		}
 	}, {
 		p: 0.02,
 		f: function() {
-			setText(text, "Orcish Chain Mail");
+			setBUCAndItem(B, U, C, text, "Orcish Chain Mail");
 		}
 	}, {
 		p: 0.072,
 		f: function() {
-			setText(text, "Chain Mail");
+			setBUCAndItem(B, U, C, text, "Chain Mail");
 		}
 	}, {
 		p: 0.015,
 		f: function() {
-			setText(text, "Elven Mithril-Coat");
+			setBUCAndItem(B, U, C, text, "Elven Mithril-Coat");
 		}
 	}, {
 		p: 0.062,
 		f: function() {
-			setText(text, "Splint Mail");
+			setBUCAndItem(B, U, C, text, "Splint Mail");
 		}
 	}, {
 		p: 0.072,
 		f: function() {
-			setText(text, "Banded Mail");
+			setBUCAndItem(B, U, C, text, "Banded Mail");
 		}
 	}, {
 		p: 0.01,
 		f: function() {
-			setText(text, "Dwarvish Mithril-Coat");
+			setBUCAndItem(B, U, C, text, "Dwarvish Mithril-Coat");
 		}
 	}, {
 		p: 0.025,
 		f: function() {
-			setText(text, "Bronze Plate Mail");
+			setBUCAndItem(B, U, C, text, "Bronze Plate Mail");
 		}
 	}, {
 		p: 0.044,
 		f: function() {
-			setText(text, "Plate Mail");
+			setBUCAndItem(B, U, C, text, "Plate Mail");
 		}
 	}, {
 		p: 0.01,
 		f: function() {
-			setText(text, "Crystal Plate Mail");
+			setBUCAndItem(B, U, C, text, "Crystal Plate Mail");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Orcish Cloak");
+			setBUCAndItem(B, U, C, text, "Orcish Cloak");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Dwarvish Cloak");
+			setBUCAndItem(B, U, C, text, "Dwarvish Cloak");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Leather Cloak");
+			setBUCAndItem(B, U, C, text, "Leather Cloak");
 		}
 	}, {
 		p: 0.01,
 		f: function() {
-			setText(text, "Cloak of Displacement");
+			setBUCAndItem(B, U, C, text, "Cloak of Displacement");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Oilskin Cloak");
+			setBUCAndItem(B, U, C, text, "Oilskin Cloak");
 		}
 	}, {
 		p: 0.009,
 		f: function() {
-			setText(text, "Alchemy Smock");
+			setBUCAndItem(B, U, C, text, "Alchemy Smock");
 		}
 	}, {
 		p: 0.01,
 		f: function() {
-			setText(text, "Cloak of Invisability");
+			setBUCAndItem(B, U, C, text, "Cloak of Invisability");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "Cloak of Magic Resistance");
+			setBUCAndItem(B, U, C, text, "Cloak of Magic Resistance");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Elven Cloak");
+			setBUCAndItem(B, U, C, text, "Elven Cloak");
 		}
 	}, {
 		p: 0.003,
 		f: function() {
-			setText(text, "Robe");
+			setBUCAndItem(B, U, C, text, "Robe");
 		}
 	}, {
 		p: 0.009,
 		f: function() {
-			setText(text, "Cloak of Protection");
+			setBUCAndItem(B, U, C, text, "Cloak of Protection");
 		}
 	}, {
 		p: 0.003,
 		f: function() {
-			setText(text, "Dunce Cap");
+			setBUCAndItem(B, U, C, text, "Dunce Cap");
 		}
 	}, {
 		p: 0.003,
 		f: function() {
-			setText(text, "Cornuthaun");
+			setBUCAndItem(B, U, C, text, "Cornuthaun");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "Dented Pot");
+			setBUCAndItem(B, U, C, text, "Dented Pot");
 		}
 	}, {
 		p: 0.006,
 		f: function() {
-			setText(text, "Elven Leather Helm");
+			setBUCAndItem(B, U, C, text, "Elven Leather Helm");
 		}
 	}, {
 		p: 0.01,
 		f: function() {
-			setText(text, "Helmet");
+			setBUCAndItem(B, U, C, text, "Helmet");
 		}
 	}, {
 		p: 0.006,
 		f: function() {
-			setText(text, "Orcish Helm");
+			setBUCAndItem(B, U, C, text, "Orcish Helm");
 		}
 	}, {
 		p: 0.006,
 		f: function() {
-			setText(text, "Helm of Brilliance");
+			setBUCAndItem(B, U, C, text, "Helm of Brilliance");
 		}
 	}, {
 		p: 0.006,
 		f: function() {
-			setText(text, "Helm of Opposite Alignment");
+			setBUCAndItem(B, U, C, text, "Helm of Opposite Alignment");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "Helm of Telepathy");
+			setBUCAndItem(B, U, C, text, "Helm of Telepathy");
 		}
 	}, {
 		p: 0.006,
 		f: function() {
-			setText(text, "Dwarvish Iron Helm");
+			setBUCAndItem(B, U, C, text, "Dwarvish Iron Helm");
 		}
 	}, {
 		p: 0.016,
 		f: function() {
-			setText(text, "Leather Gloves");
+			setBUCAndItem(B, U, C, text, "Leather Gloves");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Gauntlets of Dexterity");
+			setBUCAndItem(B, U, C, text, "Gauntlets of Dexterity");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Gauntlets of Fumbling");
+			setBUCAndItem(B, U, C, text, "Gauntlets of Fumbling");
 		}
 	}, {
 		p: 0.008,
 		f: function() {
-			setText(text, "Gauntlets of Power");
+			setBUCAndItem(B, U, C, text, "Gauntlets of Power");
 		}
 	}, {
 		p: 0.006,
 		f: function() {
-			setText(text, "Small Shield");
+			setBUCAndItem(B, U, C, text, "Small Shield");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "Orcish Shield");
+			setBUCAndItem(B, U, C, text, "Orcish Shield");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "Uruk-hai Shield");
+			setBUCAndItem(B, U, C, text, "Uruk-hai Shield");
 		}
 	}, {
 		p: 0.002,
 		f: function() {
-			setText(text, "Elven Shield");
+			setBUCAndItem(B, U, C, text, "Elven Shield");
 		}
 	}, {
 		p: 0.004,
 		f: function() {
-			setText(text, "Dwarvish Round Shield");
+			setBUCAndItem(B, U, C, text, "Dwarvish Round Shield");
 		}
 	}, {
 		p: 0.007,
 		f: function() {
-			setText(text, "Large Shield");
+			setBUCAndItem(B, U, C, text, "Large Shield");
 		}
 	}, {
 		p: 0.003,
 		f: function() {
-			setText(text, "Shield of Reflection");
+			setBUCAndItem(B, U, C, text, "Shield of Reflection");
 		}
 	}, {
 		p: 0.025,
 		f: function() {
-			setText(text, "Low Boots");
+			setBUCAndItem(B, U, C, text, "Low Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Elven Boots");
+			setBUCAndItem(B, U, C, text, "Elven Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Kicking Boots");
+			setBUCAndItem(B, U, C, text, "Kicking Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Fumble Boots");
+			setBUCAndItem(B, U, C, text, "Fumble Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Levetation Boots");
+			setBUCAndItem(B, U, C, text, "Levitation Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Jumping Boots");
+			setBUCAndItem(B, U, C, text, "Jumping Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Speed Boots");
+			setBUCAndItem(B, U, C, text, "Speed Boots");
 		}
 	}, {
 		p: 0.012,
 		f: function() {
-			setText(text, "Water Walking Boots");
+			setBUCAndItem(B, U, C, text, "Water Walking Boots");
 		}
 	}, {
-		p: 0.015,
+		p: 0.015, 
 		f: function() {
-			setText(text, "High Boots");
+			setBUCAndItem(B, U, C, text, "High Boots");
 		}
 	}, {
 		p: 0.007,
 		f: function() {
-			setText(text, "Iron Shoes");
+			setBUCAndItem(B, U, C, text, "Iron Shoes");
 		}
 	});
 
 	probabilityobject();
 }
 
-function setBUCAndItem(B, U, C, item, text) {
+function setBUCAndItem(B, U, C, text, item) {
+	if (item === "Helm of Opposite Alignment" || 
+		item === "Gauntlets of Fumbling" || 
+		item === "Fumble Boots" || 
+		item === "Levitation Boots") {
+		B = .01;
+		U = .09;
+		C = .9;
+	}
+
 	var probabilityobject = new Probability({
 		p: B,
 		f: function() {
@@ -492,6 +505,8 @@ function setBUCAndItem(B, U, C, item, text) {
 			setText(text, "Cursed ".concat(item));
 		}
 	});
+
+	probabilityobject();
 }
 
 function setText(elementId, textValue) {
