@@ -170,7 +170,324 @@ function calculateItemGehennom() {
 }
 
 function calculateWeapon() {
+	var text = "weaponInput";
+	var B = .09;
+	var U = .79;
+	var C = .12;
 
+	var probabilityobject = new Probability({
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Orcish Dagger");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Dagger");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Silver Dagger");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Elven Dagger");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Knife");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Stiletto");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Axe");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Battle Axe");
+		}
+	}, {
+		p: 0.013,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Dwarvish Mattock");
+		}
+	}, {
+		p: 0.003,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Orcish Short Sword");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Short Sword");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Dwarvish Short Sword");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Elven Short Sword");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Broadsword");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Elven Broadsword");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Long Sword");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Katana");
+		}
+	}, {
+		p: 0.022,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Two-Handed Sword");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scimitar");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Silver Saber");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Club");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Aklys");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Mace");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Morning Star");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Flail");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "War Hammer");
+		}
+	}, {
+		p: 0.011,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Quarterstaff");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Partisan");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Fauchard");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Glavie");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bec-de-cordin");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spetum");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Lucern Hammer");
+		}
+	}, {
+		p: 0.006,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Guisarme");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ranseur");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Voulge");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bill-Guisarme");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bardiche");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Halberd");
+		}
+	}, {
+		p: 0.013,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Orcish Spear");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spear");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Silver Spear");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Elven Spear");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Dwarvish Spear");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Javelin");
+		}
+	}, {
+		p: 0.008,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Trident");
+		}
+	}, {
+		p: 0.004,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Lance");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Orcish Bow");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Orcish Arrow");
+		}
+	}, {
+		p: 0.024,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bow");
+		}
+	}, {
+		p: 0.055,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Arrow");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Elven Bow");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Elven Arrow");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ya");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Silver Arrow");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Sling");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Crossbow");
+		}
+	}, {
+		p: 0.055, 
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Crossbow Bolt");
+		}
+	}, {
+		p: 0.06,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Dart");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Shurikin");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Boomarang");
+		}
+	}, {
+		p: 0.002,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Bullwhip");
+		}
+	});
+
+	probabilityobject();
 }
 
 function calculateArmor() {
