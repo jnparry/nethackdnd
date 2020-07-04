@@ -12,6 +12,8 @@ function calculateItemDungeon() {
 		p: 0.5,
 		f: setText(text, "Armor")
 	})
+
+	probabilitilized();
 }
 
 function calculateItemContainer() {
