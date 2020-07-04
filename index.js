@@ -6,14 +6,59 @@ function calculateOnePlusOne() {
 function calculateItemDungeon() {
 	var text = "ItemDugeon";
 	var probabilityobject = new Probability({
-		p: 0.5,
+		p: 0.1,
 		f: function() {
 			setText(text, "Weapon");
 		}
 	}, {
-		p: 0.5,
+		p: 0.1,
 		f: function() {
 			setText(text, "Armor");
+		}
+	}, {
+		p: 0.2,
+		f: function() {
+			setText(text, "Comestible");
+		}
+	}, {
+		p: 0.08,
+		f: function() {
+			setText(text, "Tool");
+		}
+	}, {
+		p: 0.16,
+		f: function() {
+			setText(text, "Potion");
+		}
+	}, {
+		p: 0.16,
+		f: function() {
+			setText(text, "Scroll");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setText(text, "Spellbook");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setText(text, "Wand");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setText(text, "Ring");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Amulet");
+		}
+	}, {
+		p: 0.08,
+		f: function() {
+			setText(text, "Gem");
 		}
 	});
 
@@ -21,13 +66,112 @@ function calculateItemDungeon() {
 }
 
 function calculateItemContainer() {
-	var text = document.getElementById("ItemContainer");
-	text.value = "hello";
+	var text = "ItemContainer";
+	var probabilityobject = new Probability({
+		p: 0.15,
+		f: function() {
+			setText(text, "Comestible");
+		}
+	}, {
+		p: 0.07,
+		f: function() {
+			setText(text, "Gold");
+		}
+	}, {
+		p: 0.18,
+		f: function() {
+			setText(text, "Potion");
+		}
+	}, {
+		p: 0.18,
+		f: function() {
+			setText(text, "Scroll");
+		}
+	}, {
+		p: 0.12,
+		f: function() {
+			setText(text, "Spellbook");
+		}
+	}, {
+		p: 0.06,
+		f: function() {
+			setText(text, "Wand");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setText(text, "Ring");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Amulet");
+		}
+	}, {
+		p: 0.18,
+		f: function() {
+			setText(text, "Gem");
+		}
+	});
+
+	probabilityobject();
 }
 
 function calculateItemGehennom() {
-	var text = document.getElementById("ItemGehennom");
-	text.value = "hello";
+	var text = "ItemGehennom";
+	var probabilityobject = new Probability({
+		p: 0.2,
+		f: function() {
+			setText(text, "Weapon");
+		}
+	}, {
+		p: 0.2,
+		f: function() {
+			setText(text, "Armor");
+		}
+	}, {
+		p: 0.16,
+		f: function() {
+			setText(text, "Comestible");
+		}
+	}, {
+		p: 0.12,
+		f: function() {
+			setText(text, "Tool");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Potion");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setText(text, "Scroll");
+		}
+	}, {
+		p: 0.08,
+		f: function() {
+			setText(text, "Wand");
+		}
+	}, {
+		p: 0.08,
+		f: function() {
+			setText(text, "Ring");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setText(text, "Amulet");
+		}
+	}, {
+		p: 0.1,
+		f: function() {
+			setText(text, "Gem");
+		}
+	});
+
+	probabilityobject();
 }
 
 function setText(elementId, textValue) {
