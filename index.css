@@ -26,3 +26,7 @@ label {
   padding-top: 7px;
   padding-bottom: 3px;
 }
+
+input {
+  width: 70%;
+}
