@@ -34,48 +34,70 @@
             <div class="column" style="background-color:#aaa;">
                 <h4>Dungeon</h4>
                 <label for="weaponinput">Weapons</label>
-                <input readonly placeholder="Item Class" id="weaponInput" name="weaponinput"></input>
+                <input readonly placeholder="Weapon" id="weaponInput" name="weaponinput"></input>
                 <button onclick="calculateWeapon()">Click here</button>
 
                 <label for="Armorinput">Armor</label>
-                <input readonly placeholder="Item Class" id="armorInput" name="Armorinput"></input>
+                <input readonly placeholder="Armor" id="armorInput" name="Armorinput"></input>
                 <button onclick="calculateArmor()">Click here</button>
 
                 <label for="Comestiblesinput">Comestibles</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Comestiblesinput"></input>
+                <input readonly placeholder="Comestible" id="ItemDugeon" name="Comestiblesinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Toolsinput">Tools</label>
-                <input readonly placeholder="Item Class" id="toolInput" name="Toolsinput"></input>
-                <button onclick="CalculateTool()">Click here</button>
+                <input readonly placeholder="Tool" id="toolInput" name="Toolsinput"></input>
+                <button onclick="calculateTool()">Click here</button>
 
                 <label for="Potionsinput">Potions</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Potionsinput"></input>
+                <input readonly placeholder="Potion" id="ItemDugeon" name="Potionsinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Scrollsinput">Scrolls</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Scrollsinput"></input>
+                <input readonly placeholder="scroll" id="ItemDugeon" name="Scrollsinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Spellbooksinput">Spellbooks</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Spellbooksinput"></input>
+                <input readonly placeholder="Spellbooks" id="ItemDugeon" name="Spellbooksinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Wandsinput">Wands</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Wandsinput"></input>
+                <input readonly placeholder="Wand" id="ItemDugeon" name="Wandsinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Ringsinput">Rings</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Ringsinput"></input>
+                <input readonly placeholder="Ring" id="ItemDugeon" name="Ringsinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Amuletsinput">Amulets</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Amuletsinput"></input>
+                <input readonly placeholder="Amulet" id="ItemDugeon" name="Amuletsinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
 
                 <label for="Gemsinput">Gems</label>
-                <input readonly placeholder="Item Class" id="ItemDugeon" name="Gemsinput"></input>
+                <input readonly placeholder="Gem" id="ItemDugeon" name="Gemsinput"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h4>Monsters</h4>
+                    <label for="Locations">Location</label>
+                    <select name="Locations" id="Locations" required>
+                        <option value="Dungeon">Dungeon of Doom</option>
+                        <option value="Gnome">Gnome Mines</option>
+                        <option value="Gehennom">Gehennom</option>
+                        <option value="Maze">Maze</option>
+                    </select>
+
+                    <label for="FloorLevel">Floor Level</label>
+                    <input type="number" name="FloorLevel" id="FloorLevel">
+
+                    <label for="PlayerLevel">Player Level</label>
+                    <input type="number" name="PlayerLevel" id="PlayerLevel">
+
+                    <label for="NumRooms">Number of Rooms</label>
+                    <input type="number" name="NumRooms" id="NumRooms">
+
+                    <input readonly placeholder="Monsters" id="MonsterSpawn">
+                    <button onclick="calculateNumMonsters()">Click here</button>
             </div>
         </div>
     </body>

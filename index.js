@@ -1,3 +1,10 @@
+/*
+*
+*
+* CALCULATION FUNCTIONS
+* 
+*
+*/
 function calculateItemDungeon() {
 	var text = "ItemDugeon";
 	var probabilityobject = new Probability({
@@ -796,7 +803,7 @@ function calculateArmor() {
 	probabilityobject();
 }
 
-function CalculateTool() {
+function calculateTool() {
 	var text = "toolInput";
 	var B = 0;
 	var U = 1;
@@ -1101,6 +1108,60 @@ function CalculateTool() {
 	probabilityobject();
 }
 
+function calculateNumMonsters() {
+	var numMonsters = 0;
+	var numMinotaurs = 0;
+	var elementId = "MonsterSpawn";
+	var resultText = '';
+
+	var location = document.getElementById('Locations').value;
+	var floorLevel = document.getElementById('FloorLevel').value;
+	var playerLevel = document.getElementById('PlayerLevel').value;
+	var numRooms = document.getElementById('NumRooms').value;
+
+	if (location == 'Maze') {
+		var probabilityobject = new Probability(
+		{
+			p: 0.34,
+			f: function() {
+				numMonsters = getRandomInt(7, 12);
+				numMinotaurs = getRandomInt(0, 3);
+			}
+		});
+		probabilityobject();
+		resultText = numMonsters + ' Monsters and ' + numMinotaurs + ' Minotaurs';
+	}
+	else if (location === '' || numRooms == '' || numRooms < 1) {
+		resultText = 'Error: Need Number of Rooms, Dummy';
+	} 
+	else {
+		var probabilityobject = new Probability(
+		{
+			p: 0.34,
+			f: function() {
+				numMonsters++;
+			}
+		});
+		for (let i = 0; i < numRooms; i++) {
+			probabilityobject();
+		}
+		resultText = numMonsters + ' Monsters'; 
+	}
+	setText(elementId, resultText);
+}
+/*
+*
+*
+* HELPER FUNCTIIONS
+*
+*
+*/
+function getRandomInt(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min)) + min;
+}
+
 function setBUCAndItem(B, U, C, text, item) {
 	if (item === "Helm of Opposite Alignment" || 
 		item === "Gauntlets of Fumbling" || 
@@ -1134,6 +1195,7 @@ function setBUCAndItem(B, U, C, text, item) {
 function setText(elementId, textValue) {
 	document.getElementById(elementId).value = textValue;
 }
+
 
 /*
  * Probability.js: Call JavaScript functions by probability.
