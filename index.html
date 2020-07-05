@@ -42,8 +42,8 @@
                 <button onclick="calculateArmor()">Click here</button>
 
                 <label for="Comestiblesinput">Comestibles</label>
-                <input readonly placeholder="Comestible" id="ItemDugeon" name="Comestiblesinput"></input>
-                <button onclick="calculateItemDungeon()">Click here</button>
+                <input readonly placeholder="Comestible" id="comestibleInput" name="Comestiblesinput"></input>
+                <button onclick="calculateComestible()">Click here</button>
 
                 <label for="Toolsinput">Tools</label>
                 <input readonly placeholder="Tool" id="toolInput" name="Toolsinput"></input>
@@ -96,8 +96,12 @@
                     <label for="NumRooms">Number of Rooms</label>
                     <input type="number" name="NumRooms" id="NumRooms">
 
-                    <input readonly placeholder="Monsters" id="MonsterSpawn">
+                    <br><br>
+                    <input readonly placeholder="Number of Monsters" id="MonsterSpawn">
                     <button onclick="calculateNumMonsters()">Click here</button>
+
+                    <input readonly placeholder="Type of Monster" id="MonsterType">
+                    <button onclick="calculateMonsterType()">Click here</button>
             </div>
         </div>
     </body>
