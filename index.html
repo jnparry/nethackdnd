@@ -8,31 +8,31 @@
     </head>
     
     <body>
-        <h1>Nethack Probability Calculator</h1>
+        <h2>Nethack Probability Calculator</h2>
 
         <div class="row">
-            <h3>Item</h3>
+            <h4>Item</h4>
             <div class="column" style="background-color:#aaa;">
-                <h4>Dungeon</h4>
+                <h5>Dungeon</h5>
                 <input readonly placeholder="Item Class" id="ItemDugeon"></input>
                 <button onclick="calculateItemDungeon()">Click here</button>
             </div>
             <div class="column" style="background-color:#bbb;">
-                <h4>Containers</h4>
+                <h5>Containers</h5>
                 <input readonly placeholder="Item Class" id="ItemContainer"></input>
                 <button onclick="calculateItemContainer()">Click here</button>
             </div>
             <div class="column" style="background-color:#ccc;">
-                <h4>Gehennom</h4>
+                <h5>Gehennom</h5>
                 <input readonly placeholder="Item Class" id="ItemGehennom"></input>
                 <button onclick="calculateItemGehennom()">Click here</button>
             </div>
         </div>
 
         <div class="row">
-            <h3>Individual Items</h3>
+            <h4>Individual Items</h4>
             <div class="column" style="background-color:#aaa;">
-                <h4>Dungeon</h4>
+                <h5>Dungeon</h5>
                 <label for="weaponinput">Weapons</label>
                 <input readonly placeholder="Weapon" id="weaponInput" name="weaponinput"></input>
                 <button onclick="calculateWeapon()">Click here</button>
@@ -78,7 +78,7 @@
                 <button onclick="calculateGem()">Click here</button>
             </div>
             <div class="column" style="background-color:#bbb;">
-                <h4>Monsters</h4>
+                <h5>Monsters</h5>
                     <label for="Locations">Location</label>
                     <select name="Locations" id="Locations" required>
                         <option value="Dungeon">Dungeon of Doom</option>
@@ -100,6 +100,7 @@
                     <input readonly placeholder="Number of Monsters" id="MonsterSpawn">
                     <button onclick="calculateNumMonsters()">Click here</button>
 
+                    <br><br>
                     <input readonly placeholder="Type of Monster" id="MonsterType">
                     <button onclick="calculateMonsterType()">Click here</button>
             </div>
