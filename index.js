@@ -1633,6 +1633,526 @@ function calculateSpellbook() {
 	probabilityobject();
 }
 
+function calculateWand() {
+	var text = "wandInput";
+	var B = .03;
+	var U = .94;
+	var C = .03;
+	var probabilityobject = new Probability({
+		p: 0.095,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Light");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Nothing");
+		}
+	}, {
+		p: 0.055,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Digging");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Enlightenment");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Locking");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Magic Missile");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Make Invisible");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Opening");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Probing");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Secret Door Detection");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Slow Monster");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Speed Monster");
+		}
+	}, {
+		p: 0.075,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Striking");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Undead Turning");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Cold");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Fire");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Lightning");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Sleep");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Cancellation");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Create Monster");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Polymorph");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Teleportaion");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Death");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Wand of Wishing");
+		}
+	});
+
+	probabilityobject();
+}
+
+function calculateRing() {
+	var text = "ringInput";
+	var B = .16;
+	var U = .42;
+	var C = .42;
+	var probabilityobject = new Probability({
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Adorment");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(0, .1, .9, text, "Ring of Hunger");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Protection");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Protection from Shape Shifting");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Stealth");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Sustain Ability");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Warning");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(0, .1, .9, text, "Ring of Aggravate Monster");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Cold Resistance");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Gain Strength");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Increase Accuracy");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Increase Damage");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Invisability");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Poison Resistance");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of See Invisible");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Shock Resistance");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Fire Resistance");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Free Action");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Levitation");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Regeneration");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Searching");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Slow Digestion");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(0, .1, .9, text, "Ring of Teleportaion");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Conflict");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(0, .1, .9, text, "Ring of Polymorph");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Polymorph Control");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ring of Teleportaion Control");
+		}
+	});
+
+	probabilityobject();
+}
+
+function calculateAmulet() {
+	var text = "amuletInput";
+	var B = .05;
+	var U = .9;
+	var C = .05;
+	var probabilityobject = new Probability({
+		p: 0.13,
+		f: function() {
+			setBUCAndItem(.005, .09, .905, text, "Amulet of Change");
+		}
+	}, {
+		p: 0.175,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amulet of ESP");
+		}
+	}, {
+		p: 0.075,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amulet of Life Saving");
+		}
+	}, {
+		p: 0.065,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amulet of Magical Breathing");
+		}
+	}, {
+		p: 0.075,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amulet of Reflection");
+		}
+	}, {
+		p: 0.135,
+		f: function() {
+			setBUCAndItem(.005, .09, .905, text, "Amulet of Restful Sleep");
+		}
+	}, {
+		p: 0.135,
+		f: function() {
+			setBUCAndItem(.005, .09, .905, text, "Amulet of Strangulation");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amulet of Unchanging");
+		}
+	}, {
+		p: 0.165,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amulet of Versus Poison");
+		}
+	});
+
+	probabilityobject();
+}
+
+function calculateGem() {
+	var text = "gemInput";
+	var B = 0;
+	var U = 1;
+	var C = 0;
+	var probabilityobject = new Probability({
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Dilithium Crystal");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Diamond");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Ruby");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Jacinth Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Sapphire");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Black Opal");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Emerald");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Turquoise Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Citrine Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Aquamarine Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amber Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Topaz Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Jet Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Opal");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Chrysoberyl Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Garnet Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Amathyst Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Jasper Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Fluorite Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Jade Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Obsidian Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Agate Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of White Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Blue Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Red Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Yellowish Brown Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Orange Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Yellow Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Black Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Green Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Worthless Piece of Violet Glass");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Luckstone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(0, 0, 1, text, "Loadstone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Touchstone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Flint Stone");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Rock");
+		}
+	});
+
+	probabilityobject();
+}
+
 function calculateNumMonsters() {
 	var numMonsters = 0;
 	var numMinotaurs = 0;
