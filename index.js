@@ -1423,6 +1423,216 @@ function calculateScroll() {
 	probabilityobject();
 }
 
+function calculateSpellbook() {
+	var text = "spellbookInput";
+	var B = .03;
+	var U = .94;
+	var C = .03;
+	var probabilityobject = new Probability({
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Force Bolt");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Drain Life");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Magic Missile");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Cone Of Cold");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Fireball");
+		}
+	}, {
+		p: 0.005,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Finger of Death");
+		}
+	}, {
+		p: 0.018,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Protection");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Create Monster");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Remove Curse");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Create Familiar");
+		}
+	}, {
+		p: 0.016,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Turn Undead");
+		}
+	}, {
+		p: 0.043,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Detect Monster");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Light");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Detect Food");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Clairvoyance");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Detect Unseen");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Identify");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Detect Treasure");
+		}
+	}, {
+		p: 0.018,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Magic Mapping");
+		}
+	}, {
+		p: 0.05,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Sleep");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Confuse Monster");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Slow Monster");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Cause Fear");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Charm Monster");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Jumping");
+		}
+	}, {
+		p: 0.033,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Haste Self");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Invisability");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Levitation");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Teleport Away");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Healing");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Cure blindness");
+		}
+	}, {
+		p: 0.032,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Cure sickness");
+		}
+	}, {
+		p: 0.027,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Extra Healing");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Stone to Flesh");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Restore Ability");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Knock");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Wizard Lock");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Dig");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Polymorph");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Spellbook of Cancellation");
+		}
+	});
+
+	probabilityobject();
+}
+
 function calculateNumMonsters() {
 	var numMonsters = 0;
 	var numMinotaurs = 0;
