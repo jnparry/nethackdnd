@@ -1161,7 +1161,7 @@ function calculatePotion() {
 	var probabilityobject = new Probability({
 		p: 0.069,
 		f: function() {
-			setBUCAndItem(B, U, C, text, "Potion ofWater");
+			setBUCAndItem(B, U, C, text, "Potion of Water");
 		}
 	}, {
 		p: 0.042,
@@ -1206,12 +1206,12 @@ function calculatePotion() {
 	}, {
 		p: 0.012,
 		f: function() {
-			setBUCAndItem(B, U, C, text, "Holy water");
+			setBUCAndItem(1, 0, 0, text, "Holy water");
 		}
 	}, {
 		p: 0.01,
 		f: function() {
-			setBUCAndItem(B, U, C, text, "Unholy Water");
+			setBUCAndItem(0, 0, 1, text, "Unholy Water");
 		}
 	}, {
 		p: 0.04,
@@ -1297,6 +1297,126 @@ function calculatePotion() {
 		p: 0.042,
 		f: function() {
 			setBUCAndItem(B, U, C, text, "Potion of Paralysis");
+		}
+	});
+
+	probabilityobject();
+}
+
+function calculateScroll() {
+	var text = "scrollInput";
+	var B = .125;
+	var U = .75;
+	var C = .125;
+	var probabilityobject = new Probability({
+		p: 0.18,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Identify");
+		}
+	}, {
+		p: 0.09,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Light");
+		}
+	}, {
+		p: 0.028,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Blank Paper");
+		}
+	}, {
+		p: 0.08,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Enchant Weapon");
+		}
+	}, {
+		p: 0.063,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Enchant Armor");
+		}
+	}, {
+		p: 0.065,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Remove Curse");
+		}
+	}, {
+		p: 0.053,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Confuse Monster");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Destroy Armor");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Fire");
+		}
+	}, {
+		p: 0.025,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Food Detection");
+		}
+	}, {
+		p: 0.033,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Gold Detection");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Magic Mapping");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Scare Monster");
+		}
+	}, {
+		p: 0.055,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Teleportaion");
+		}
+	}, {
+		p: 0.035,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Amnesia");
+		}
+	}, {
+		p: 0.045,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Create Monster");
+		}
+	}, {
+		p: 0.018,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Earth");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Taming");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Charging");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Genocide");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Punishment");
+		}
+	}, {
+		p: 0.015,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Scroll of Stinking Cloud");
 		}
 	});
 
