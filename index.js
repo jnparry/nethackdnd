@@ -1153,6 +1153,156 @@ function calculateTool() {
 	probabilityobject();
 }
 
+function calculatePotion() {
+	var text = "potionInput";
+	var B = .125;
+	var U = .75;
+	var C = .125;
+	var probabilityobject = new Probability({
+		p: 0.069,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion ofWater");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Booze");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Fruit Juice");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of See Invisible");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of sickness");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Confusion");
+		}
+	}, {
+		p: 0.047,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Extra Healing");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Hallucination");
+		}
+	}, {
+		p: 0.057,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Healing");
+		}
+	}, {
+		p: 0.012,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Holy water");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Unholy Water");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Restore Ability");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Sleeping");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of blindness");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Gain Energy");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Invisability");
+		}
+	}, {
+		p: 0.04,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Monster Detection");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of object Detection");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Enlightenment");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Full Healing");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Poiton of Levitation");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Polymorph");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Speed");
+		}
+	}, {
+		p: 0.01,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Acid");
+		}
+	}, {
+		p: 0.03,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Oil");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Gain Ability");
+		}
+	}, {
+		p: 0.02,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Gain Level");
+		}
+	}, {
+		p: 0.042,
+		f: function() {
+			setBUCAndItem(B, U, C, text, "Potion of Paralysis");
+		}
+	});
+
+	probabilityobject();
+}
+
 function calculateNumMonsters() {
 	var numMonsters = 0;
 	var numMinotaurs = 0;
